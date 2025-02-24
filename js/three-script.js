@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import TWEEN from '/js/three/tween.module.js';
-import { OrbitControls } from '/js/three/OrbitControls.js';
-import { FontLoader } from '/js/three/FontLoader.js';
-import Stats from '/js/three/stats.module.js'; // FPS , отключить на проде
+import TWEEN from '../js/three/tween.module.js';
+import { OrbitControls } from '../js/three/OrbitControls.js';
+import { FontLoader } from '../js/three/FontLoader.js';
+import Stats from '../js/three/stats.module.js'; // FPS , отключить на проде
 // https://threejs.org/examples/webgl_geometry_shapes.html пример геометрии
 class LS_Core {
     constructor() {
