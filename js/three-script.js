@@ -28,7 +28,7 @@ class LS_Core {
         };
         this.objectsToLoad = []; // Создаём массив для контроля загрузки
         this.targets = { sphere: [] };
-        this.fontUrl = '../fonts/uni_sans_bold_regular.json';
+        this.fontUrl = './fonts/uni_sans_bold_regular.json';
         this.arrangeTime = 2000; // время раскрытия сферы
         // х-ки бокса с картинкой и текстом
         this.boxInfo = {
