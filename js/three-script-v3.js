@@ -130,7 +130,36 @@ function animate() {
     TWEEN.update();
     controls.update();
 }
+// показ изображений после того как сфера софрмирована
+// showImages() {
+//     // console.log(this.objects);
+//     this.objects.forEach((obj, index) => {
+//         if (!obj.userData || !obj.userData.imgMesh.material) return;
 
+//         obj.userData.imgMesh.visible = true; // Включаем отрисовку
+
+//         if (obj.userData.imgMesh.userData.opacityTween) {
+//             obj.userData.imgMesh.userData.opacityTween.stop();
+//         }
+
+//         obj.userData.imgMesh.userData.opacityTween = new TWEEN.Tween(obj.userData.imgMesh.material)
+//             .to({ opacity: 1 }, 1000) // Плавное появление за 1 секунду
+//             .delay(index * 50) // Легкая задержка между объектами
+//             .easing(TWEEN.Easing.Quadratic.Out)
+//             .onComplete((that) => {
+//                 // console.log('s');
+//             })
+//             .start();
+
+//         // ставим прозрачность фона после показа фото
+//         if (!obj.userData.shadowMaterial) return;
+//         let stime = (this.table.length * 5) + (index * 60);
+//         setTimeout(() => {
+//             this.animateShadowOpacity(obj.userData.shadowMaterial, this.boxInfo.hoverBoxInActive);
+//         }, stime)
+
+//     });
+// }
 function render() {
     renderer.render(scene, camera);
 }
